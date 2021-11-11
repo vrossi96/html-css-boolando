@@ -1,5 +1,62 @@
+/* general */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+body {
+  background-color: orange;
+  font-family: sans-serif;
+  font-weight: 600;
+}
+
+.container {
+  width: 75%;
+  margin: 0 auto;
+  padding: 4em;
+  background-color: grey;
+}
+
+.row {
+  text-align: center;
+  padding-bottom: 5em;
+}
+
+/* articles */
+article {
+  width: calc(80% / 3);
+  height: 500px;
+  background-color: orangered;
+  position: relative;
+  display: inline-block;
+}
+
+/* articles text */
+.description {
+  position: absolute;
+  top: 100%;
+  padding-top: 5px;
+}
+
+p {
+  text-align: left;
+}
+
+.description .brand {
+  font-size: 0.6rem;
+}
+
+.price .new::after,
+.old::after {
+  content: "\20AC";
+}
+
+.new {
+  color: red;
+}
+
+.old {
+  font-size: 0.9rem;
+  text-decoration: line-through;
 }

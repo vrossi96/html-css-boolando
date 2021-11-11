@@ -1,0 +1,42 @@
+/* general */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-weight: 600;
+  background-color: aqua;
+}
+
+#container {
+  background-color: bisque;
+  width: 80%;
+  margin: 0 auto;
+  padding: 50px 0;
+}
+
+.row {
+  text-align: center;
+}
+
+/* cards */
+article.card {
+  display: inline-block;
+  padding: 5px;
+  position: relative;
+}
+
+img {
+  width: 450px;
+}
+
+.card-description {
+  text-align: left;
+}
+
+.brand {
+  font-size: 0.6rem;
+}

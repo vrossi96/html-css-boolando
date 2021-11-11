@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-  width: 75%;
+  width: 80%;
   margin: 0 auto;
   padding: 4em;
   background-color: grey;
@@ -25,7 +25,7 @@ body {
 
 /* articles */
 article {
-  width: calc(80% / 3);
+  width: calc(90% / 3);
   height: 600px;
   background-color: orangered;
   position: relative;
@@ -35,6 +35,25 @@ article {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+}
+
+.row .article-a:hover {
+  background-image: url(../img/1b.webp);
+}
+.row .article-b:hover {
+  background-image: url(../img/2b.webp);
+}
+.row .article-c:hover {
+  background-image: url(../img/3b.webp);
+}
+.row .article-d:hover {
+  background-image: url(../img/4b.webp);
+}
+.row .article-e:hover {
+  background-image: url(../img/5b.webp);
+}
+.row .article-f:hover {
+  background-image: url(../img/6b.webp);
 }
 
 .row .article-a {
@@ -76,6 +95,29 @@ article {
 }
 .labels div:last-child {
   background-color: #00875a;
+}
+
+/* favourite */
+.favourite {
+  height: 3rem;
+  width: 3rem;
+  background-color: #fff;
+  border-radius: 50% 0 0 50%;
+  border-right: none;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.favourite .heart {
+  cursor: pointer;
+}
+.favourite .heart::after {
+  content: "\2665";
+}
+.favourite .heart:hover {
+  color: red;
 }
 
 /* articles text */

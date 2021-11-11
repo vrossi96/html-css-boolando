@@ -57,9 +57,26 @@ article {
 }
 
 /* articles labels */
+.labels {
+  position: absolute;
+  bottom: 25px;
+}
 
-/* #eb0037 rosso
-#00875a verde */
+.labels * {
+  color: white;
+  display: inline-block;
+  padding: 3px 5px;
+}
+
+.labels div:first-child {
+  background-color: #eb0037;
+}
+.labels div:first-child::after {
+  content: "\0025";
+}
+.labels div:last-child {
+  background-color: #00875a;
+}
 
 /* articles text */
 .description {

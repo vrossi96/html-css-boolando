@@ -26,11 +26,39 @@ body {
 /* articles */
 article {
   width: calc(80% / 3);
-  height: 500px;
+  height: 600px;
   background-color: orangered;
   position: relative;
   display: inline-block;
+  margin: 20px 5px;
+
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
+
+.row .article-a {
+  background-image: url(../img/1.webp);
+}
+.row .article-b {
+  background-image: url(../img/2.webp);
+}
+.row .article-c {
+  background-image: url(../img/3.webp);
+}
+.row .article-d {
+  background-image: url(../img/4.webp);
+}
+.row .article-e {
+  background-image: url(../img/5.webp);
+}
+.row .article-f {
+  background-image: url(../img/6.webp);
+}
+
+/* articles labels */
+#eb0037 rosso
+#00875a verde
 
 /* articles text */
 .description {

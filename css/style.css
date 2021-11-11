@@ -87,13 +87,13 @@ article {
   padding: 3px 5px;
 }
 
-.labels div:first-child {
+.labels .discount {
   background-color: #eb0037;
 }
-.labels div:first-child::after {
+.labels .discount::after {
   content: "\0025";
 }
-.labels div:last-child {
+.labels .eco {
   background-color: #00875a;
 }
 

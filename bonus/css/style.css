@@ -25,7 +25,7 @@ body {
 /* cards */
 article.card {
   display: inline-block;
-  padding: 5px;
+  margin: 5px;
   position: relative;
 }
 
@@ -36,7 +36,63 @@ img {
 .card-description {
   text-align: left;
 }
-
 .brand {
   font-size: 0.6rem;
+}
+.item-name {
+  text-transform: uppercase;
+}
+.new {
+  color: red;
+}
+.old {
+  font-size: 0.9rem;
+  text-decoration: line-through;
+}
+.card-description .new::after,
+.old::after {
+  content: "\20AC";
+}
+
+/* cards labels  */
+.labels {
+  position: absolute;
+  bottom: 15%;
+}
+.labels * {
+  color: white;
+  display: inline-block;
+  padding: 3px 5px;
+}
+.labels .discount {
+  background-color: #eb0037;
+}
+.labels .discount::after {
+  content: "\0025";
+}
+.labels .eco {
+  background-color: #00875a;
+}
+
+/* favourite */
+.favourite {
+  height: 3rem;
+  width: 3rem;
+  background-color: #fff;
+  border-radius: 50% 0 0 50%;
+  border-right: none;
+  position: absolute;
+  right: 0;
+  top: 30px;
+  font-size: 2rem;
+  line-height: 3rem;
+}
+.favourite .heart {
+  cursor: pointer;
+}
+.favourite .heart::after {
+  content: "\2665";
+}
+.favourite .heart:hover {
+  color: red;
 }

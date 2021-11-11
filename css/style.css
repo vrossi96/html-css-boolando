@@ -6,7 +6,6 @@
 }
 
 body {
-  background-color: orange;
   font-family: sans-serif;
   font-weight: 600;
 }
@@ -15,7 +14,6 @@ body {
   width: 80%;
   margin: 0 auto;
   padding: 4em;
-  background-color: grey;
 }
 
 .row {
@@ -27,7 +25,6 @@ body {
 article {
   width: calc(90% / 3);
   height: 600px;
-  background-color: orangered;
   position: relative;
   display: inline-block;
   margin: 20px 5px;

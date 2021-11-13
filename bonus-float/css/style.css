@@ -7,8 +7,6 @@
 
 body {
   font-family: sans-serif;
-
-  background-color: chocolate;
 }
 
 .clearfix {
@@ -23,25 +21,19 @@ body {
 
   /* rimuove spazio in eccesso aggiuggendo margin al figlio*/
   overflow: auto;
-
-  background-color: cornflowerblue;
 }
 
 /* box of all cards */
 .card-box {
   width: 90%;
   margin: 80px auto;
-
-  background-color: darkgoldenrod;
 }
 
-/* card box */
+/* products box */
 .card {
   width: calc(100% / 3 - 20px);
   margin: 10px;
   float: left;
-
-  background-color: darkgray;
 }
 
 .img-box {

@@ -41,12 +41,12 @@ body {
   cursor: pointer;
 }
 
-.img-box > img {
-  width: 100%;
-}
-
 .description-box {
   padding-bottom: 10px;
+}
+
+.img-box > img {
+  width: 100%;
 }
 
 /* text */

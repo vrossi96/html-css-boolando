@@ -6,6 +6,8 @@
 }
 
 body {
+  font-family: sans-serif;
+
   background-color: chocolate;
 }
 
@@ -25,6 +27,7 @@ body {
   background-color: cornflowerblue;
 }
 
+/* box of all cards */
 .card-box {
   width: 90%;
   margin: 80px auto;
@@ -32,6 +35,7 @@ body {
   background-color: darkgoldenrod;
 }
 
+/* card box */
 .card {
   width: calc(100% / 3 - 20px);
   margin: 10px;
@@ -40,6 +44,77 @@ body {
   background-color: darkgray;
 }
 
-img {
+.img-box {
+  position: relative;
+  cursor: pointer;
+}
+
+.img-box > img {
   width: 100%;
+}
+
+.description-box {
+  padding-bottom: 10px;
+}
+
+/* text */
+.description-box .product-name {
+  text-transform: uppercase;
+}
+.description-box .new {
+  font-weight: bold;
+  color: red;
+}
+.description-box .old,
+.brand {
+  font-size: 0.8rem;
+}
+
+/* images */
+.img-box .img-b {
+  display: none;
+}
+.img-box:hover .img-b {
+  display: inline-block;
+}
+.img-box:hover .img-a {
+  display: none;
+}
+
+/* labels */
+.labels {
+  position: absolute;
+  bottom: 5%;
+}
+.labels * {
+  display: inline-block;
+  padding: 2px 5px;
+  color: white;
+  font-weight: bold;
+}
+.discount {
+  background-color: #eb0037;
+}
+.eco {
+  background-color: #00875a;
+}
+/* favourite */
+.favourite {
+  position: absolute;
+  right: 0;
+  top: 5%;
+  font-size: 35px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  padding-left: 10px;
+  cursor: pointer;
+  /* border */
+  border: 1px solid black;
+  border-top-left-radius: 50%;
+  border-bottom-left-radius: 50%;
+  border-right: none;
+}
+.favourite:hover {
+  color: red;
 }

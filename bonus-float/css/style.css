@@ -34,6 +34,9 @@ body {
   width: calc(100% / 3 - 20px);
   margin: 10px;
   float: left;
+  border: 2px solid grey;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
 }
 
 .img-box {
@@ -64,12 +67,6 @@ body {
 
 /* images */
 .img-box .img-b {
-  display: none;
-}
-.img-box:hover .img-b {
-  display: inline-block;
-}
-.img-box:hover .img-a {
   display: none;
 }
 
@@ -107,6 +104,20 @@ body {
   border-bottom-left-radius: 50%;
   border-right: none;
 }
-.favourite:hover {
+
+/* hover */
+.card:hover {
+  border-color: #00875a;
+}
+
+.img-box:hover .img-b {
+  display: inline-block;
+}
+.img-box:hover .img-a {
+  display: none;
+}
+
+.img-box .favourite:hover {
   color: red;
+  border-color: red;
 }
